@@ -1,46 +1,48 @@
-# Portfolio v7 - Lê Hoài Nam
+# Portfolio V8 - Lê Hoài Nam
 
-**Thông tin sinh viên:**
-- Họ và tên: Lê Hoài Nam
-- Mã sinh viên: 2071020138
-- Lớp: 20-04
-- Học phần: Thiết kế Web và triển khai hệ thống phần mềm – FIT4014
+Hồ sơ cá nhân giới thiệu thông tin sinh viên, các dự án học tập và thông tin liên hệ. Dự án được xây dựng bằng HTML5 và CSS3, với bố cục responsive cho màn hình nhỏ.
 
----
+## Thông tin sinh viên
 
-## 1. Thông tin Triển khai
-- **Link Repository:** `https://github.com/phananhtai/portfolio-v7`
-- **URL GitHub Pages:** `https://phananhtai.github.io/portfolio-v7/`
-- **Nguồn xuất bản:** Nhánh `main` / Thư mục `/ (root)`
-- **SHA bản cuối đã kiểm chứng:** `a1b2c3d4e5f67890abcdef1234567890abcdef12`
+- **Họ và tên:** Lê Hoài Nam
+- **Mã sinh viên:** 2071020138
+- **Lớp:** 20-04
+- **Học phần:** Thiết kế Web và triển khai hệ thống phần mềm (FIT4014)
 
----
+## Demo và mã nguồn
 
-## 2. Cấu trúc thư mục
-```
+- **GitHub Pages:** [https://phananhtai.github.io/portfolio-v7/](https://phananhtai.github.io/portfolio-v7/)
+- **Repository:** [https://github.com/phananhtai/portfolio-v7](https://github.com/phananhtai/portfolio-v7)
+- **Triển khai:** Nhánh `main`, thư mục gốc của repository.
+
+## Tính năng
+
+- Hiển thị phần giới thiệu, thông tin sinh viên, danh sách dự án và liên hệ.
+- Điều hướng nhanh đến từng phần trên cùng trang.
+- Giao diện responsive, điều chỉnh bố cục theo kích thước màn hình.
+- Không cần cài đặt thư viện hay công cụ build để xem trang tĩnh.
+
+## Mở và kiểm tra trên máy
+
+1. Tải hoặc clone repository về máy.
+2. Mở thư mục dự án và mở tệp `index.html` bằng trình duyệt web (Chrome, Edge hoặc Firefox).
+3. Chọn các mục **Giới thiệu**, **Dự án** và **Liên hệ** trên thanh điều hướng để kiểm tra nội dung.
+4. Thu nhỏ cửa sổ trình duyệt hoặc dùng chế độ responsive trong DevTools để kiểm tra bố cục trên màn hình nhỏ.
+
+## Cấu trúc dự án
+
+```text
 .
-├── index.html          # Trang chủ chính
-├── css/
-│   └── style.css       # File định dạng giao diện CSS
-├── assets/             # Hình ảnh và tài nguyên bài làm
-├── README.md           # Hướng dẫn và tổng quan hồ sơ
-├── AI_LOG.md           # Khai báo và minh chứng sử dụng AI
-└── RELEASE_NOTES.md    # Mô tả phiên bản v7 và nhật ký thay đổi
+├── index.html
+├── style.css
+├── README.md
+├── CHANGELOG.md
+├── release-notes.md
+├── minh-chung-cai-tien-giao-dien.md
+└── docs/
+    ├── AI_LOG.md
+    ├── evidence-index.md
+    └── evidence/
 ```
 
----
-
-## 3. Cách chạy Local và Kiểm tra
-1. Tải bộ mã nguồn hoặc giải nén file `Portfolio_v7_PhanAnhTai_2071020138.zip`.
-2. Mở file `index.html` trực tiếp bằng trình duyệt web bất kỳ (Chrome, Edge, Firefox).
-3. Kiểm tra các mục: Giới thiệu, Dự án, Liên hệ và các hiệu ứng Responsive khi thu nhỏ màn hình.
-
----
-
-## 4. Checklist Kiểm chứng (Local - Repo - URL)
-| Nội dung | Kết quả thực tế | Căn cứ / Minh chứng |
-| :--- | :--- | :--- |
-| **Local & Repository** | Đồng bộ bản commit cuối, không còn file thừa chưa commit. | Match SHA `a1b2c3d4` trên GitHub Repo |
-| **Bản triển khai** | GitHub Pages build thành công từ nhánh `main`. | Status: Success trên GitHub Actions |
-| **URL, CSS, Ảnh** | URL mở độc lập (trình duyệt ẩn danh), CSS và đường dẫn nạp 100% đúng. | Request Status `200 OK` cho tất cả tài nguyên |
-| **Đồng bộ phiên bản** | Giao diện v7 khớp hoàn toàn giữa Local và URL GitHub Pages. | Đối chiếu hiển thị thông tin Lê Hoài Nam - 2071020138 |
+Tài liệu thay đổi phiên bản nằm trong [CHANGELOG.md](CHANGELOG.md); nhật ký sử dụng AI và danh mục minh chứng nằm trong thư mục [docs/](docs/).

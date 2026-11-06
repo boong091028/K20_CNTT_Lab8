@@ -23,3 +23,17 @@
 - **Gợi ý từ AI:** AI gợi ý đoạn code Media Query điều chỉnh layout linh hoạt.
 - **Quyết định & Lý do:** **Chấp nhận và tinh chỉnh.** Áp dụng CSS media query để giữ giao diện gọn gàng, tăng trải nghiệm người dùng trên di động.
 - **Kết quả thử nghiệm:** Thử nghiệm thành công trên DevTools Responsive Mode và thiết bị thực tế.
+
+---
+
+## Nhật ký hoàn thiện V8
+
+### Tình huống 3: Chuẩn bị tài liệu bàn giao và sửa liên kết CSS
+- **Hiện tượng & dữ kiện ban đầu:** README còn mô tả cấu trúc v7 không khớp repository; `index.html` trỏ đến `css/style.css`, trong khi stylesheet hiện có ở thư mục gốc.
+- **Gợi ý từ AI:** Cập nhật README theo tệp thực tế, tạo changelog/danh mục minh chứng, và đổi tham chiếu stylesheet thành `style.css`.
+- **Quyết định & lý do:** Chấp nhận sau khi đối chiếu cấu trúc tệp; giữ liên kết demo/repository đã có trong README, không tuyên bố đã xác minh trạng thái GitHub Pages.
+- **Kết quả kiểm tra:** Xác nhận `style.css` tồn tại và `git diff --check` không báo lỗi. Chưa kiểm tra trực quan trên trình duyệt hoặc xác nhận deploy.
+
+### Tình huống 4: Ghi nhận lịch sử thay đổi so với v7
+- **Dữ kiện:** `git log --oneline v7..HEAD` hiện không trả về commit nào; các cập nhật V8 đang ở working tree.
+- **Quyết định:** Ghi rõ tình trạng chưa có commit sau tag v7 trong CHANGELOG thay vì mô tả các thay đổi chưa commit như lịch sử commit.
